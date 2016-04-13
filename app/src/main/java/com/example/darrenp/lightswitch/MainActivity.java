@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int find(List<Model> models, String value) {
         for (int i = 0; i < models.size(); i++)
-            if (models.get(i).getName() == value)
+            if (models.get(i).getName().equals(value))
                 return i;
         return 0;
     }
